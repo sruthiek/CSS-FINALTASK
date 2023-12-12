@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300;400;500&family=Poppins:wght@200&family=Roboto+Slab:wght@700&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    border: 0.1px solid rgb(187, 185, 185);
+    height: auto;
+}
+
+.container-fluid {
+
+    margin-left: $spacer-11;
+    margin-right: $spacer-10;
+
+    padding: 0;
+    border: 0;
+
+    &__ul {
+        display: flex;
+
+        &__li {
+            margin-left: $spacer-10;
+            color: $color_1;
+            font-size: $spacer-3;
+
+            &__a {
+                font-size: $spacer-3;
+                text-decoration: none;
+                font-weight: 400;
+                color: $color_4;
+            }
+        }
+
+        &__btn {
+
+            width: $spacer-1;
+            height: $spacer-11;
+            background-color: $color_2;
+            color: $color_3;
+
+            margin-left: $spacer-4;
+        }
+    }
+}
+
+
+
+
+@include mobile {
+    .container-fluid {
+        margin-right: 0px;
+    }
+
+    .container-fluid__ul {
+        display: block;
+    }
+
+    .container-fluid__ul__li {
+        margin-left: 0px;
+        padding: 3px;
+    }
+
+    .container-fluid__ul__btn {
+
+        height: auto;
+        width: 120px;
+        margin-left: 0px;
+    }
+}
+
+@include tablet {
+
+    .container-fluid {
+        display: flex;
+        margin: 10px;
+        width: 100%;
+        padding: 0;
+        border: 0;
+    }
+    
+    .container-fluid__ul {
+        display: flex;
+
+    }
+
+    .container-fluid__ul__li {
+        padding: 0;
+    }
+
+    .container-fluid__ul__li__a {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+}
+
+
+@include largescreen {
+    .container-fluid__ul {
+        display: flex;
+
+    }
+
+    .container-fluid__ul__li {
+        padding: 0;
+    }
+
+    .container-fluid__ul__li__a {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}

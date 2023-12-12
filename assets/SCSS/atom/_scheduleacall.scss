@@ -1,0 +1,28 @@
+
+
+.btn{
+    width: $spacer-1;
+    height: $spacer-11;
+    background-color: $color_5;
+    color: $color_1;
+    
+    margin-left: $spacer-4;
+    &--new{
+        background-color: $color_5;
+        color: $color_1;
+        margin-left: 50px;
+        padding: 10px;
+        margin-bottom: 10px;
+       
+    }
+}
+
+
+@include mobile{
+    .btn {
+
+        height: auto;
+        width: 120px;
+        margin-left: 0px;
+    }
+}

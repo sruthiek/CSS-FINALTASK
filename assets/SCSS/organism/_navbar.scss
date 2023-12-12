@@ -1,0 +1,12 @@
+.nav-link{
+    font-size: 14px;
+    color: #10385B !important;
+    font-weight: 900;
+}
+
+
+@include tablet {
+    .nav-link{
+        font-size: 16px !important;
+    } 
+}

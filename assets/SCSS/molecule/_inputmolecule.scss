@@ -1,0 +1,41 @@
+.inputwithicon{
+    width: 30%;
+    height: 20%;
+    // background-color: rgb(146, 182, 112);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+   
+    &__input{
+        width: 30%; 
+        height: 30px;
+        padding: 10px;
+    }
+    
+}
+
+
+@include mobile {
+    .inputwithicon{
+        width: 70%;
+        // border: none;
+    }
+}
+
+
+@include tablet{
+    .inputwithicon{
+        width: 100%;
+        // border: none;
+    }
+}
+
+@include largescreen{
+    .inputwithicon{
+        width: 100%;
+        // border: none;
+    }
+}
+
+

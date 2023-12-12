@@ -1,0 +1,57 @@
+.beinexcard{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(226, 241, 223);
+    padding: 20px;
+    margin: 10px;
+    &__headingicon{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       &__h2{
+        font-weight: 700;
+       }
+    }
+    &__p{
+        text-align: justify;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+}
+
+
+@include mobile{
+    .beinexcard{
+        height: auto;
+        width: auto;
+        padding: 5px;
+    }
+.beinexcard__p{
+    font-size: 15px;
+}
+.beinexcard__headingicon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+}
+
+@include tablet{
+    .beinexcard{
+        height: 400px;
+        width: auto;
+        padding: 5px;
+    }
+    .beinexcard__p{
+       padding: 0px;
+       font-size: 14px;
+    }
+}
+@include largescreen{
+    .beinexcard{
+        height: 350;
+        width: 400px;
+        padding: 5px;
+    }
+}

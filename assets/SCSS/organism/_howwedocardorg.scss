@@ -1,0 +1,36 @@
+.container2__carddiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    // background-color: aqua;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 22px;
+}
+
+
+@include mobile {
+    .container2__carddiv{
+        display: block;
+        height: auto;
+
+    }  
+}
+
+@include tablet {
+    .container2__carddiv{
+        display: flex;
+        flex-wrap: wrap;
+       
+        width: 100%;
+        height: auto;
+    }  
+}
+
+@mixin largescreen{
+    .container2__carddiv{
+        display: flex;
+        height: auto;
+    }   
+}

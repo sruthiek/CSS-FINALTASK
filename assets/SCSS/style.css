@@ -1,0 +1,5 @@
+
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'mobile'.\A         on line 47 of H:/sruthi-beinex/CSS-Finaltask/assets/SCSS/organism/_headerorg.scss, in `mobile'\A         from line 47 of H:/sruthi-beinex/CSS-Finaltask/assets/SCSS/organism/_headerorg.scss\A         from line 15 of H:\sruthi-beinex\CSS-Finaltask\assets\SCSS\style.scss"; }
